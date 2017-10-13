@@ -1,8 +1,17 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <script type="text/javascript">
-    var a = 10;
+     <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+  var a = 10;
     var b = 10;
     var c = "10";
 
@@ -14,8 +23,14 @@
 
     console.log(a == b && typeof (a) == typeof (b));
     console.log(a == c && typeof (a) == typeof (c));
+<<<<<<< HEAD
 
    </script>
+=======
+}
+}
+    </script>
+>>>>>>> aea9573686915f17876672701d3a12ac356036e9
 </head>
 <body>
     <div>

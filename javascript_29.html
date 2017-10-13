@@ -1,12 +1,27 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <script type="text/javascript">
-       var age;
+     <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+        var age;
        console.log(age); // undefined
        age = 10;
        console.log(age); // 10
+<<<<<<< HEAD
   </script>
+=======
+}
+}
+    </script>
+>>>>>>> aea9573686915f17876672701d3a12ac356036e9
 </head>
 <body>
     <div>

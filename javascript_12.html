@@ -1,9 +1,23 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
     <script type="text/javascript">
 
 switch(expression) {
+=======
+     <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+    switch(expression) {
+>>>>>>> aea9573686915f17876672701d3a12ac356036e9
    case n:
        // code block
        break;
@@ -13,6 +27,7 @@ switch(expression) {
    default:
        // code block
 }
+<<<<<<< HEAD
   </script>
 </head>
 <body>
@@ -60,3 +75,12 @@ switch(expression) {
     </div>    
 </body>
 </html>
+=======
+}
+}
+    </script>
+</head>
+<body>
+</body>
+</html>
+>>>>>>> aea9573686915f17876672701d3a12ac356036e9

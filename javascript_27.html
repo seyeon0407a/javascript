@@ -1,9 +1,26 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
     <script type="text/javascript">
        console.log(age); // Uncaught ReferenceError: age is not defined
   </script>
+=======
+     <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+    console.log(age); // Uncaught ReferenceError: age is not defined
+}
+}
+    </script>
+>>>>>>> aea9573686915f17876672701d3a12ac356036e9
 </head>
 <body>
     <div>
